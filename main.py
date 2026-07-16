@@ -33,5 +33,5 @@ if (month,day) in birthday_dict:
     with smtplib.SMTP("smtp.gmail.com",587) as connection:
         connection.starttls()
         connection.login(my_email,password)
-        connection.sendmail(from_addr=my_email,to_addrs=birthday_person["email"],msg=f"Subject: Happy Birthday!\n\n{n}")
+        connection.sendmail(from_addr=MY_EMAIL,to_addrs=birthday_person["email"],msg=f"Subject: Happy Birthday!\n\n{n}")
 
