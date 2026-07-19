@@ -10,6 +10,7 @@ auth_token = os.environ.get("AUTH_TOKEN")
 
 
 
+
 parameters = {
     "lat":MY_LAT,
     "lon":MY_LONG,
