@@ -4,18 +4,18 @@ from twilio.rest import Client
 
 MY_LAT = 11.843159 # Your latitude
 MY_LONG = 13.1536214
-API_KEY = os.environ.get("OWM_API_KEY")
+API_KEY = os.environ.get(OWM_API_KEY)
 account_sid = os.environ.get("ACCOUNT_SID")
 auth_token = os.environ.get("AUTH_TOKEN")
 
-print(API_KEY)
+
 
 
 parameters = {
     "lat":MY_LAT,
     "lon":MY_LONG,
-    "appid":API_KEY,
     "cnt":4,
+    "appid":API_KEY,
 }
 
 response = requests.get(url="https://api.openweathermap.org/data/2.5/forecast",params=parameters)
